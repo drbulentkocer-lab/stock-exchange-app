@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕐 Digital Clock</h1>
+            <p>Real-time Clock in Multiple Time Zones</p>
+        </header>
+
+        <div class="controls">
+            <div class="theme-toggle">
+                <button id="themeToggle" class="theme-btn">
+                    <span class="theme-icon">🌙</span> Dark Mode
+                </button>
+            </div>
+            <div class="timezone-selector">
+                <label for="tzSelect">Add Time Zone:</label>
+                <select id="tzSelect">
+                    <option value="">-- Select Time Zone --</option>
+                </select>
+                <button id="addBtn" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clocks will be added here dynamically -->
+        </div>
+
+        <div class="quick-add">
+            <h3>Quick Add Popular Time Zones</h3>
+            <div class="quick-buttons">
+                <button class="quick-btn" data-tz="America/New_York">New York (EST)</button>
+                <button class="quick-btn" data-tz="Europe/London">London (GMT)</button>
+                <button class="quick-btn" data-tz="Europe/Paris">Paris (CET)</button>
+                <button class="quick-btn" data-tz="Asia/Tokyo">Tokyo (JST)</button>
+                <button class="quick-btn" data-tz="Asia/Dubai">Dubai (GST)</button>
+                <button class="quick-btn" data-tz="Australia/Sydney">Sydney (AEDT)</button>
+                <button class="quick-btn" data-tz="Asia/Bangkok">Bangkok (ICT)</button>
+                <button class="quick-btn" data-tz="America/Los_Angeles">Los Angeles (PST)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
